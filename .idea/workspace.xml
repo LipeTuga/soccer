@@ -142,7 +142,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.CountryTest">
+  <component name="RunManager" selected="PHPUnit.SeasonTest.a_season_has_a_year">
     <configuration name="CountryTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\CountryTest" file="$PROJECT_DIR$/tests/Feature/CountryTest.php" scope="Class" />
       <method v="2" />
@@ -151,12 +151,17 @@
       <TestRunner class="Tests\Feature\CountryTest" file="$PROJECT_DIR$/tests/Feature/CountryTest.php" method="a_country_has_a_code" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="SeasonTest.a_season_has_a_year" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\SeasonTest" file="$PROJECT_DIR$/tests/Unit/SeasonTest.php" method="a_season_has_a_year" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.SeasonTest.a_season_has_a_year" />
         <item itemvalue="PHPUnit.CountryTest" />
         <item itemvalue="PHPUnit.CountryTest.a_country_has_a_code" />
       </list>
@@ -174,6 +179,7 @@
       <updated>1574512231752</updated>
       <workItem from="1574512233044" duration="330000" />
       <workItem from="1574525832665" duration="1673000" />
+      <workItem from="1574805107997" duration="499000" />
     </task>
     <servers />
   </component>
@@ -185,7 +191,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
