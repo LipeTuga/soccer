@@ -119,6 +119,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -179,7 +180,7 @@
       <updated>1574512231752</updated>
       <workItem from="1574512233044" duration="330000" />
       <workItem from="1574525832665" duration="1673000" />
-      <workItem from="1574805107997" duration="499000" />
+      <workItem from="1574805107997" duration="953000" />
     </task>
     <servers />
   </component>
