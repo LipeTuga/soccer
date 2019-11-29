@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="980e8ed2-b80c-4ec0-a4cd-603c9eb6a516" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Country.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Season.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Season.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/CountryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CountryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/SeasonTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/SeasonTest.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,6 +119,11 @@
   </component>
   <component name="ProjectId" id="1U17QZxFx8Jbycy4473PBrWJ40w" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -131,25 +139,21 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="PHPUnit.SeasonTest.a_season_has_a_year">
-    <configuration name="CountryTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\CountryTest" file="$PROJECT_DIR$/tests/Feature/CountryTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.LeagueTest">
+    <configuration name="CountryTest.a_country_has_many_leagues" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\CountryTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CountryTest.php" method="a_country_has_many_leagues" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="CountryTest.a_country_has_a_code" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\CountryTest" file="$PROJECT_DIR$/tests/Feature/CountryTest.php" method="a_country_has_a_code" scope="Method" />
+    <configuration name="LeagueTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\LeagueTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/LeagueTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="LeagueTest.a_league_has_a_name" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\LeagueTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/LeagueTest.php" method="a_league_has_a_name" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SeasonTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\SeasonTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/SeasonTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="SeasonTest.a_season_has_a_year" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -162,11 +166,25 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.LeagueTest" />
+        <item itemvalue="PHPUnit.LeagueTest.a_league_has_a_name" />
+        <item itemvalue="PHPUnit.CountryTest.a_country_has_many_leagues" />
+        <item itemvalue="PHPUnit.SeasonTest" />
         <item itemvalue="PHPUnit.SeasonTest.a_season_has_a_year" />
-        <item itemvalue="PHPUnit.CountryTest" />
-        <item itemvalue="PHPUnit.CountryTest.a_country_has_a_code" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -181,6 +199,7 @@
       <workItem from="1574512233044" duration="330000" />
       <workItem from="1574525832665" duration="1673000" />
       <workItem from="1574805107997" duration="953000" />
+      <workItem from="1574969565396" duration="1764000" />
     </task>
     <servers />
   </component>
@@ -199,5 +218,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1574971258857">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1574971258857" />
+    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1574971258856">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1574971258856" />
+    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1574971258854">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1574971258854" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1574971258856">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1574971258856" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1574971235607">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1574971235607" />
   </component>
 </project>

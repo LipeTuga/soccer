@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\League;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -37,6 +38,13 @@ class CountryTest extends TestCase
     public function a_country_has_a_image()
     {
         $this->assertArrayHasKey('image', $this->country->toArray());
+    }
+
+    /** @test */
+    public function a_country_has_many_leagues()
+    {
+        factory(League::class)->create(['country_id'=>$this->country->id]);
+        $this->assertInstanceOf(League::class, $this->country->leagues->first());
     }
 
 }

@@ -9,4 +9,9 @@ class Season extends Model
     protected $casts = [
         'year'=>'int'
         ];
+
+    public function leagues()
+    {
+        return $this->belongsToMany(League::class);
+    }
 }
