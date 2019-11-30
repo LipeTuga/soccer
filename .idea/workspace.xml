@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="980e8ed2-b80c-4ec0-a4cd-603c9eb6a516" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Country.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/League.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/League.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Season.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Season.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CountryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CountryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/LeagueFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/LeagueFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_28_193529_create_leagues_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_28_193529_create_leagues_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/LeagueTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/LeagueTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Unit/SeasonTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/SeasonTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +141,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
-  <component name="RunManager" selected="PHPUnit.LeagueTest">
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
     <configuration name="CountryTest.a_country_has_many_leagues" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Feature\CountryTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CountryTest.php" method="a_country_has_many_leagues" scope="Method" />
       <method v="2" />
@@ -152,25 +154,25 @@
       <TestRunner class="Tests\Unit\LeagueTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/LeagueTest.php" method="a_league_has_a_name" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="SeasonTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\SeasonTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/SeasonTest.php" scope="Class" />
+    <configuration name="LeagueTest.a_league_has_one_seasons" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\LeagueTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/LeagueTest.php" method="a_league_has_one_seasons" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="SeasonTest.a_season_has_a_year" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\SeasonTest" file="$PROJECT_DIR$/tests/Unit/SeasonTest.php" method="a_season_has_a_year" scope="Method" />
+    <configuration name="SeasonTest.a_season_has_many_leagues" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\SeasonTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/SeasonTest.php" method="a_season_has_many_leagues" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.SeasonTest.a_season_has_many_leagues" />
+        <item itemvalue="PHPUnit.LeagueTest.a_league_has_one_seasons" />
         <item itemvalue="PHPUnit.LeagueTest" />
         <item itemvalue="PHPUnit.LeagueTest.a_league_has_a_name" />
         <item itemvalue="PHPUnit.CountryTest.a_country_has_many_leagues" />
-        <item itemvalue="PHPUnit.SeasonTest" />
-        <item itemvalue="PHPUnit.SeasonTest.a_season_has_a_year" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +201,8 @@
       <workItem from="1574512233044" duration="330000" />
       <workItem from="1574525832665" duration="1673000" />
       <workItem from="1574805107997" duration="953000" />
-      <workItem from="1574969565396" duration="1764000" />
+      <workItem from="1574969565396" duration="2100000" />
+      <workItem from="1575112103482" duration="370000" />
     </task>
     <servers />
   </component>
@@ -220,25 +223,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1574971258857">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1575112467697">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1574971258857" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1574971258856">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575112467697" />
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575028013081" />
+    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1575112467694">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1574971258856" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1574971258854">
+    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575112467694" />
+    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575028013079" />
+    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1575112467692">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1574971258854" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1574971258856">
+    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575112467692" />
+    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575028013078" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1575112467696">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1574971258856" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1574971235607">
+    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575112467696" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575028013080" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1575112505433">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575112505433" />
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1574971235607" />
   </component>
 </project>

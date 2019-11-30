@@ -27,8 +27,7 @@ class SeasonTest extends TestCase
     public function a_season_has_many_leagues()
     {
         $season = factory(Season::class)->create();
-        factory(League::class)->create();
-        $season->leagues()->attach([$season->id]);
+        factory(League::class)->create(['season_id'=>$season->id]);
         $this->assertInstanceOf(League::class, $season->leagues->first());
     }
 

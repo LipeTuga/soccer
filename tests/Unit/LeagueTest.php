@@ -37,11 +37,9 @@ class LeagueTest extends TestCase
 
     }
     /** @test */
-    public function a_league_has_many_seasons()
+    public function a_league_has_one_seasons()
     {
-        $season = factory(Season::class)->create();
-        $this->league->seasons()->sync([$season->id]);
-        $this->assertInstanceOf(Season::class, $this->league->seasons->first());
+        $this->assertInstanceOf(Season::class, $this->league->season);
     }
 
 }

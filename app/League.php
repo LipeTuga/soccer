@@ -11,8 +11,8 @@ class League extends Model
         return $this->belongsTo(Country::class);
     }
 
-    public function seasons()
+    public function season()
     {
-        return $this->belongsToMany(Season::class);
+        return $this->belongsTo(Season::class);
     }
 }

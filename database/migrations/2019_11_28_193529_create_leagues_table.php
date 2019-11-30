@@ -16,20 +16,14 @@ class CreateLeaguesTable extends Migration
         Schema::create('leagues', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('country_id')->nullable();
+            $table->unsignedBigInteger('season_id');
             $table->string('name');
 
             $table->foreign('country_id')->references('id')->on('countries');
+            $table->foreign('season_id')->references('id')->on('seasons');
             $table->timestamps();
         });
 
-        Schema::create('league_season', function(Blueprint $table){
-           $table->unsignedBigInteger('league_id');
-           $table->unsignedBigInteger('season_id');
-
-           $table->unique(['season_id', 'league_id']);
-           $table->foreign('season_id')->references('id')->on('seasons')->onDelete('cascade');
-           $table->foreign('league_id')->references('id')->on('leagues')->onDelete('cascade');
-        });
     }
 
     /**
