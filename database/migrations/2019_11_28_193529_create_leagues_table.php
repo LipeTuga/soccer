@@ -18,6 +18,10 @@ class CreateLeaguesTable extends Migration
             $table->unsignedBigInteger('country_id')->nullable();
             $table->unsignedBigInteger('season_id');
             $table->string('name');
+            $table->timestamp('start_date')->nullable();
+            $table->timestamp('end_date')->nullable();
+            $table->string('logo', 20)->nullable();
+            $table->string('flag', 20)->nullable();
 
             $table->foreign('country_id')->references('id')->on('countries');
             $table->foreign('season_id')->references('id')->on('seasons');

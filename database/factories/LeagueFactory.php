@@ -9,5 +9,9 @@ $factory->define(League::class, function (Faker $faker) {
     return [
         'name'=>$faker->name,
         'season_id'=>factory(\App\Season::class)->create()->id,
+        'start_date'=>$faker->date,
+        'end_date'=>$faker->date,
+        'logo'=>$faker->imageUrl(),
+        'flag'=>$faker->imageUrl(),
     ];
 });

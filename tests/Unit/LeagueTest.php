@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use App\Country;
 use App\League;
 use App\Season;
+use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
@@ -40,6 +41,30 @@ class LeagueTest extends TestCase
     public function a_league_has_one_seasons()
     {
         $this->assertInstanceOf(Season::class, $this->league->season);
+    }
+
+    /** @test */
+    public function a_league_has_a_start()
+    {
+        $this->assertInstanceOf(Carbon::class, $this->league->start_date);
+    }
+
+    /** @test */
+    public function a_league_has_a_end()
+    {
+        $this->assertInstanceOf(Carbon::class, $this->league->end_date);
+    }
+
+    /** @test */
+    public function a_league_has_a_logo()
+    {
+        $this->assertArrayHasKey('logo', $this->league->toArray());
+    }
+
+    /** @test */
+    public function a_league_has_a_flag()
+    {
+        $this->assertArrayHasKey('flag', $this->league->toArray());
     }
 
 }
