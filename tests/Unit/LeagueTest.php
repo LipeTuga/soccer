@@ -5,6 +5,7 @@ namespace Tests\Unit;
 use App\Country;
 use App\League;
 use App\Season;
+use App\Team;
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -65,6 +66,14 @@ class LeagueTest extends TestCase
     public function a_league_has_a_flag()
     {
         $this->assertArrayHasKey('flag', $this->league->toArray());
+    }
+
+    /** @test */
+    public function a_league_has_many_teams()
+    {
+        $teams = factory(Team::class, 3)->create();
+        $this->league->teams()->sync($teams->pluck('id')->toArray());
+        $this->assertInstanceOf(Team::class, $this->league->teams->first());
     }
 
 }

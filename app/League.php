@@ -21,4 +21,9 @@ class League extends Model
     {
         return $this->belongsTo(Season::class);
     }
+
+    public function teams()
+    {
+        return $this->belongsToMany(Team::class);
+    }
 }

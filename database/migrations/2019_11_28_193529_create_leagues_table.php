@@ -15,6 +15,7 @@ class CreateLeaguesTable extends Migration
     {
         Schema::create('leagues', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->unsignedInteger('api_id');
             $table->unsignedBigInteger('country_id')->nullable();
             $table->unsignedBigInteger('season_id');
             $table->string('name');
