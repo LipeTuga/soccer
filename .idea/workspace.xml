@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="980e8ed2-b80c-4ec0-a4cd-603c9eb6a516" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/League.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/League.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CountryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CountryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/LeagueFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/LeagueFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_23_162918_create_countries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_23_162918_create_countries_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_28_193529_create_leagues_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_28_193529_create_leagues_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/LeagueTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/LeagueTest.php" afterDir="false" />
-    </list>
+    <list default="true" id="980e8ed2-b80c-4ec0-a4cd-603c9eb6a516" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +194,7 @@
       <workItem from="1574525832665" duration="1673000" />
       <workItem from="1574805107997" duration="953000" />
       <workItem from="1574969565396" duration="2100000" />
-      <workItem from="1575112103482" duration="3318000" />
+      <workItem from="1575112103482" duration="3488000" />
     </task>
     <servers />
   </component>
