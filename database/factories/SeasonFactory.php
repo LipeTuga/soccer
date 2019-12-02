@@ -7,6 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Season::class, function (Faker $faker) {
     return [
+
         'year'=>$faker->year,
     ];
 });

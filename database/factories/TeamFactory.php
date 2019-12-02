@@ -7,8 +7,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Team::class, function (Faker $faker) {
     return [
+        'id'=>rand(1, 100000),
         'country_id'=>factory(\App\Country::class)->create(),
-        'api_id'=>rand(1, 100000),
         'name'=>$faker->name,
         'code'=>$faker->postcode,
         'logo'=>$faker->imageUrl(),

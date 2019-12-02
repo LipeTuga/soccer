@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="980e8ed2-b80c-4ec0-a4cd-603c9eb6a516" name="Default Changelist" comment="" />
+    <list default="true" id="980e8ed2-b80c-4ec0-a4cd-603c9eb6a516" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Fixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Fixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CountryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CountryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/FixtureFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/FixtureFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/LeagueFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/LeagueFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/SeasonFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SeasonFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TeamFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TeamFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_23_162918_create_countries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_23_162918_create_countries_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_28_193529_create_leagues_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_28_193529_create_leagues_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_113557_create_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_113557_create_teams_table.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,16 +145,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RunManager" selected="PHPUnit.phpunit.xml">
-    <configuration name="CountryTest.a_country_has_many_leagues" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\CountryTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/CountryTest.php" method="a_country_has_many_leagues" scope="Method" />
+    <configuration name="FixtureTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\FixtureTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/FixtureTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FixtureTest.a_fixture_belongs_to_a_league" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\FixtureTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/FixtureTest.php" method="a_fixture_belongs_to_a_league" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="LeagueTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\LeagueTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/LeagueTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="LeagueTest.a_league_has_a_name" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\LeagueTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/LeagueTest.php" method="a_league_has_a_name" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="LeagueTest.a_league_has_one_seasons" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -160,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.FixtureTest" />
+        <item itemvalue="PHPUnit.FixtureTest.a_fixture_belongs_to_a_league" />
         <item itemvalue="PHPUnit.SeasonTest.a_season_has_many_leagues" />
         <item itemvalue="PHPUnit.LeagueTest.a_league_has_one_seasons" />
         <item itemvalue="PHPUnit.LeagueTest" />
-        <item itemvalue="PHPUnit.LeagueTest.a_league_has_a_name" />
-        <item itemvalue="PHPUnit.CountryTest.a_country_has_many_leagues" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +205,7 @@
       <workItem from="1574525832665" duration="1673000" />
       <workItem from="1574805107997" duration="953000" />
       <workItem from="1574969565396" duration="2100000" />
-      <workItem from="1575112103482" duration="3488000" />
+      <workItem from="1575112103482" duration="6918000" />
     </task>
     <servers />
   </component>
@@ -215,30 +226,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1575210873859">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1575225198569">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256062" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575210873859" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1575210873855">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575225198569" />
+    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1575225198567">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256060" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575210873855" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1575210873853">
+    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575225198567" />
+    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1575225198566">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256059" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575210873853" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1575210873857">
+    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575225198566" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1575225198568">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256061" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575210873857" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1575202540398">
+    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575225198568" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1575224176753">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113092663" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575202540398" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575224176753" />
   </component>
 </project>

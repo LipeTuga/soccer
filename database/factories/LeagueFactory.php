@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(League::class, function (Faker $faker) {
     return [
-        'api_id'=>rand(1, 100000),
+        'id'=>rand(1, 100000),
         'name'=>$faker->name,
         'season_id'=>factory(\App\Season::class)->create()->id,
         'start_date'=>$faker->date,
