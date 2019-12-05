@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="980e8ed2-b80c-4ec0-a4cd-603c9eb6a516" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Constants/PredictionTypes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Fixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Fixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/CountryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CountryFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/FixtureFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/FixtureFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/LeagueFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/LeagueFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/SeasonFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SeasonFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TeamFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TeamFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_23_162918_create_countries_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_23_162918_create_countries_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_11_28_193529_create_leagues_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_11_28_193529_create_leagues_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_01_113557_create_teams_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_01_113557_create_teams_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/FixtureTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/FixtureTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +139,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
-  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+  <component name="RunManager" selected="PHPUnit.PredictionTest">
     <configuration name="FixtureTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\FixtureTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/FixtureTest.php" scope="Class" />
       <method v="2" />
@@ -153,12 +148,12 @@
       <TestRunner class="Tests\Unit\FixtureTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/FixtureTest.php" method="a_fixture_belongs_to_a_league" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="LeagueTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\LeagueTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/LeagueTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
     <configuration name="LeagueTest.a_league_has_one_seasons" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\LeagueTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/LeagueTest.php" method="a_league_has_one_seasons" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PredictionTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Unit\PredictionTest" configuration_file="$PROJECT_DIR$/phpunit.xml" file="$PROJECT_DIR$/tests/Unit/PredictionTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="SeasonTest.a_season_has_many_leagues" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -171,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.PredictionTest" />
         <item itemvalue="PHPUnit.FixtureTest" />
         <item itemvalue="PHPUnit.FixtureTest.a_fixture_belongs_to_a_league" />
         <item itemvalue="PHPUnit.SeasonTest.a_season_has_many_leagues" />
         <item itemvalue="PHPUnit.LeagueTest.a_league_has_one_seasons" />
-        <item itemvalue="PHPUnit.LeagueTest" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +200,10 @@
       <workItem from="1574525832665" duration="1673000" />
       <workItem from="1574805107997" duration="953000" />
       <workItem from="1574969565396" duration="2100000" />
-      <workItem from="1575112103482" duration="6918000" />
+      <workItem from="1575112103482" duration="7028000" />
+      <workItem from="1575369319699" duration="287000" />
+      <workItem from="1575408485111" duration="915000" />
+      <workItem from="1575493118252" duration="1669000" />
     </task>
     <servers />
   </component>
@@ -226,30 +224,42 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1575225198569">
+    <state x="722" y="7" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1575496469260">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="722" y="7" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575496469260" />
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1575497227631">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256062" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575225198569" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1575225198567">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575497227631" />
+    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1575497227629">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256060" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575225198567" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1575225198566">
+    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575497227629" />
+    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1575497227628">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256059" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575225198566" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1575225198568">
+    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575497227628" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1575497227630">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256061" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575225198568" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1575224176753">
+    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575497227630" />
+    <state x="705" y="363" key="NewPhpClassDialog" timestamp="1575496646329">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="705" y="363" key="NewPhpClassDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575496646329" />
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1575493118694">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="639" y="372" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575493118694" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1575497027093">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113092663" />
-    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575224176753" />
+    <state x="625" y="241" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1575497027093" />
   </component>
 </project>

@@ -27,4 +27,9 @@ class Fixture extends Model
         return $this->belongsTo(Team::class);
     }
 
+    public function prediction()
+    {
+        return $this->hasOne(Prediction::class);
+    }
+
 }

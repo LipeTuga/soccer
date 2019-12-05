@@ -118,6 +118,13 @@ class FixtureTest extends TestCase
         $this->assertArrayHasKey('score_penalties', $this->fixture->toArray());
     }
 
+    /** @test */
+    public function has_a_prediction()
+    {
+        factory(\App\Prediction::class)->create(['fixture_id'=>$this->fixture->id]);
+        $this->assertInstanceOf(\App\Prediction::class, $this->fixture->prediction);
+    }
+
 
 
 }

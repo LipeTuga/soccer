@@ -23,7 +23,5 @@ $factory->define(\App\Fixture::class, function (Faker $faker) {
         'score_full_time'=>rand(0,3).'-'.rand(0,3),
         'score_extra_time'=>rand(0,3).'-'.rand(0,3),
         'score_penalties'=>rand(0,3).'-'.rand(0,3),
-
-
     ];
 });
