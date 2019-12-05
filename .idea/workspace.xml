@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="980e8ed2-b80c-4ec0-a4cd-603c9eb6a516" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Constants/PredictionTypes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Fixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Fixture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/FixtureFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/FixtureFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/FixtureTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/FixtureTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +199,7 @@
       <workItem from="1575112103482" duration="7028000" />
       <workItem from="1575369319699" duration="287000" />
       <workItem from="1575408485111" duration="915000" />
-      <workItem from="1575493118252" duration="1669000" />
+      <workItem from="1575493118252" duration="2286000" />
     </task>
     <servers />
   </component>
@@ -228,26 +224,26 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="722" y="7" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1575496469260" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1575497227631">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom" timestamp="1575537969634">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256062" />
-    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575497227631" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1575497227629">
+    <state width="1878" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1575537969634" />
+    <state width="1878" height="310" key="GridCell.Tab.0.center" timestamp="1575537969632">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256060" />
-    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575497227629" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1575497227628">
+    <state width="1878" height="310" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1575537969632" />
+    <state width="1878" height="310" key="GridCell.Tab.0.left" timestamp="1575537969632">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256059" />
-    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575497227628" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1575497227630">
+    <state width="1878" height="310" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1575537969632" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right" timestamp="1575537969633">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1575113256061" />
-    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575497227630" />
+    <state width="1878" height="310" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1575537969633" />
     <state x="705" y="363" key="NewPhpClassDialog" timestamp="1575496646329">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
