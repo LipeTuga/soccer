@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePredictionsTable extends Migration
+class CreateOddsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,14 @@ class CreatePredictionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('predictions', function (Blueprint $table) {
+        Schema::create('odds', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('fixture_id')->nullable();
             $table->tinyInteger('type');
             $table->json('data');
             $table->timestamps();
             $table->foreign('fixture_id')->references('id')->on('fixtures')->onDelete('cascade');
+
         });
     }
 
@@ -30,6 +31,6 @@ class CreatePredictionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('predictions');
+        Schema::dropIfExists('odds');
     }
 }

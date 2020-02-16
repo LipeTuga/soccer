@@ -17,6 +17,7 @@ class CreateLeaguesTable extends Migration
             $table->unsignedBigInteger('id')->primary();
             $table->unsignedBigInteger('country_id')->nullable();
             $table->unsignedBigInteger('season_id');
+            $table->unsignedBigInteger('api_id');
             $table->string('name');
             $table->timestamp('start_date')->nullable();
             $table->timestamp('end_date')->nullable();

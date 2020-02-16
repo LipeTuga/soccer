@@ -18,6 +18,7 @@ class CreateTableFixtures extends Migration
             $table->unsignedBigInteger('home_team_id');
             $table->unsignedBigInteger('away_team_id');
             $table->unsignedBigInteger('league_id')->nullable();
+            $table->unsignedBigInteger('api_id');
             $table->timestamp('event_date')->nullable();
             $table->tinyInteger('status')->nullable();
             $table->timestamp('first_half_start_at')->nullable();

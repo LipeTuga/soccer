@@ -8,6 +8,7 @@ use Faker\Generator as Faker;
 $factory->define(\App\Fixture::class, function (Faker $faker) {
     return [
         'league_id'=>factory(\App\League::class)->create()->id,
+        'api_id'=>rand(1, 10000),
         'event_date'=>$faker->date(),
         'first_half_start_at'=>$faker->date(),
         'second_half_start_at'=>$faker->date(),
